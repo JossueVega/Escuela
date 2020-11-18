@@ -1,0 +1,15 @@
+footer{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: small;
+}
+
+.jumbotron{
+  background-image: url('https://cdn.pixabay.com/photo/2019/03/12/12/47/people-4050698_960_720.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
