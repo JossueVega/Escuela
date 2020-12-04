@@ -1,6 +1,6 @@
 <?php $datos="string"; ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="Es-mx" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Escuela</title>
