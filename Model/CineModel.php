@@ -23,7 +23,7 @@
    }
    }
 
-  /* public function AddCaffe($query){
+   public function Addcartelera($query){
      global $db;
 
      $consulta=$db->query($query);
@@ -33,7 +33,7 @@
      }
    }
 
-   public function EditCoffee($query){
+   public function Editcartelera($query){
      global $db;
 
      $consulta=$db->query($query);
@@ -46,7 +46,7 @@
      }
    }
 
-   public function UpdateCoffee($query)
+   public function Updatecartelera($query)
    {
      global $db;
 
@@ -69,7 +69,7 @@
      else{
        return false;
      }
-   }*/
+   }
 }
 
 

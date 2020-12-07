@@ -16,7 +16,7 @@ else{
  ?>
 <div class="row justify-content-left mt-3">
   <div class="container">
-    <a href="../index.php" class="btn btn-sm btn-outline-primary">Carteleras/a>
+    <a href="../Catalogo.php" class="btn btn-sm btn-outline-primary">Peliculas en extreno</a>
   </div>
 
 </div>
@@ -31,6 +31,7 @@ else{
           <th>Pelicula</th>
           <th>Descripcion</th>
           <th>Horario</th>
+          <th colspan="2">Accion</th>
         </tr>
       </thead>
       <tbody>
@@ -40,10 +41,15 @@ else{
             <td><?php echo $c[1]; ?></td>
             <td><?php echo $c[2]; ?></td>
             <td><?php echo $c[3];?></td>
-
+            <td colspan="2"><form class="form-inline my-2 my-lg-0" action="Update.php" method="get">
+              <input type="hidden" name="Id" value="<?php echo $c[0]; ?>  ">
+              <button type="submit" name="button" class="btn btn-sm btn-primary"><i class="fas fa-pencil-alt"></i> </button>
 
             </form>
-
+            <form class="form-inline my-2 my-lg-0" action="Delete.php" method="post">
+              <input type="hidden" name="Id" value="<?php echo $c[0]; ?>">
+              <button type="submit" name="button" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> </button>
+            </form>
           </td>
           </tr>
         <?php endforeach; ?>
@@ -52,6 +58,4 @@ else{
     </table>
   </div>
 </div>
-
-
-<?php include '../Layouts/footer.php'; ?>
+<?php include '../layouts/footer.php'; ?>

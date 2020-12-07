@@ -38,6 +38,6 @@
     </section>
 
 
-  <?php include 'Controller/Operation.php' ?>
+
 
 <?php include'layouts/footer.php'; ?>
