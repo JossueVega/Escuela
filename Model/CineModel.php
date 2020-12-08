@@ -26,10 +26,15 @@
    public function Addcartelera($query){
      global $db;
 
+
      $consulta=$db->query($query);
+
 
      if ($consulta) {
        return true;
+     }
+     else {
+        echo "error";
      }
    }
 

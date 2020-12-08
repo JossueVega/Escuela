@@ -8,7 +8,7 @@ $pelicula=$_POST['peliculae'];
 $descripcion=$_POST['descripcion'];
 $horario=$_POST['horario'];
 
- $query='update cartelera set pelicula="'.$pelicula.'",descripcion="'.$descripcion.'",horario="'.$horario.'" where Id='.$id.';';
+ $query='update cartelera set pelicula="'.$pelicula.'",descrpcion="'.$descripcion.'",horario="'.$horario.'" where Id='.$id.';';
 
 
 $update=CineModel::Updatecartelera($query);
